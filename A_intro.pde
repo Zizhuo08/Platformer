@@ -29,6 +29,8 @@ void introClicks(){
 }
 
 void initialize(){
+
+  win = false;
   terrain.clear();
   enemies.clear();
   clearWorld();
@@ -46,3 +48,4 @@ void clearWorld() {
     world.remove(bodies.get(i));
   }
 }
+
