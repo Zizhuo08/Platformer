@@ -32,7 +32,7 @@ void actWorld(){
   }
   
   if (textActive && textCanClose && qkey){
-    if (currentText.equals("Well done. You are worthy.") ){
+    if (currentText.equals("Well done. You are worthy.\n Press Q to quit") ){
       win = true;
       mode = GAMEOVER;
     }
@@ -81,3 +81,4 @@ void showTexts(){
     text(currentText, width/2, 80);
   }
 }
+
