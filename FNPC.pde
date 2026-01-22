@@ -33,10 +33,11 @@ class FNPC extends FGameObject {
   
   void interact(){
     if (player.points < 50){
-      showText("Penguin: You need 50 points to finish! \n Press Q to quit");
+      showText("Penguin: You need 50 points to finish!\n Press Q to quit");
     } else {
-      showText("Well done. You are worthy.");
+      showText("Well done. You are worthy.\n Press Q to quit");
     }
   }
 }
 boolean canInteract;
+
