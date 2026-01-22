@@ -19,7 +19,7 @@ class FShell extends FGoomba{
       direction *= -1;
       setPosition(getX()+direction * 10, getY());
     }
-    if (isTouching("player") || ekey){
+    if (isTouching("player")){
       if (player.getY() < getY() - gridSize*2/3){
         setVelocity(getVelocityX(), 0);
         setPosition(getX(), getY() - 1);
@@ -45,3 +45,4 @@ class FShell extends FGoomba{
     }
   }
 }
+
