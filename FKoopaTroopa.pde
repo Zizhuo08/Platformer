@@ -25,7 +25,7 @@ class FKoopaTroopa extends FGoomba{
   }
   
   void dropShell(){
-    if (isTouching("player") || qkey){
+    if (isTouching("player")){
       if (player.getY() < getY() - gridSize*2/3){
         FShell s = new FShell(getX(), getY());
         enemies.add(s);
@@ -36,3 +36,4 @@ class FKoopaTroopa extends FGoomba{
   
   
 }
+
